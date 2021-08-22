@@ -498,8 +498,11 @@ uint32_t bsp_init(uint32_t type, bsp_event_callback_t callback)
         {
             err_code = bsp_event_to_button_action_assign(num, BSP_BUTTON_ACTION_PUSH, BSP_EVENT_DEFAULT);
         }
-				
-				
+				//by steven 2021/08/22
+				err_code = bsp_event_to_button_action_assign(3, BSP_BUTTON_ACTION_PUSH, BSP_EVENT_KEY_3_PUSH);
+				err_code = bsp_event_to_button_action_assign(3, BSP_BUTTON_ACTION_RELEASE, BSP_EVENT_KEY_3_RELEASE);
+				err_code = bsp_event_to_button_action_assign(3, BSP_BUTTON_ACTION_LONG_PUSH, BSP_EVENT_KEY_3_LONGPUSH);
+				//by steven 2021/08/22
         if (err_code == NRF_SUCCESS)
         {
             err_code = app_button_init((app_button_cfg_t *)app_buttons,

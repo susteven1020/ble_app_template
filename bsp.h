@@ -161,9 +161,9 @@ typedef enum
     BSP_EVENT_KEY_0,                        /**< Default event of the push action of BSP_BUTTON_0 (only if this button is present). */
     BSP_EVENT_KEY_1,                        /**< Default event of the push action of BSP_BUTTON_1 (only if this button is present). */
     BSP_EVENT_KEY_2,                        /**< Default event of the push action of BSP_BUTTON_2 (only if this button is present). */
-    BSP_EVENT_KEY_3,                        /**< Default event of the push action of BSP_BUTTON_3 (only if this button is present). */
-    BSP_EVENT_KEY_4,                        /**< Default event of the push action of BSP_BUTTON_4 (only if this button is present). */
-    BSP_EVENT_KEY_5,                        /**< Default event of the push action of BSP_BUTTON_5 (only if this button is present). */
+    BSP_EVENT_KEY_3_PUSH,                   /**< Default event of the push action of BSP_BUTTON_3 (only if this button is present). */
+    BSP_EVENT_KEY_3_RELEASE,                /**< Default event of the push action of BSP_BUTTON_4 (only if this button is present). */
+    BSP_EVENT_KEY_3_LONGPUSH,               /**< Default event of the push action of BSP_BUTTON_5 (only if this button is present). */
     BSP_EVENT_KEY_6,                        /**< Default event of the push action of BSP_BUTTON_6 (only if this button is present). */
     BSP_EVENT_KEY_7,                        /**< Default event of the push action of BSP_BUTTON_7 (only if this button is present). */
     BSP_EVENT_KEY_LAST = BSP_EVENT_KEY_7,

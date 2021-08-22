@@ -593,7 +593,16 @@ static void bsp_event_handler(bsp_event_t event)
                     APP_ERROR_CHECK(err_code);
                 }
             }
-            break; // BSP_EVENT_KEY_0
+            break; 
+				case BSP_EVENT_KEY_3_PUSH:
+            NRF_LOG_INFO("BSP_EVENT_KEY_3 push!");;
+            break; // BSP_EVENT_KEY_3
+				case BSP_EVENT_KEY_3_RELEASE:
+            NRF_LOG_INFO("BSP_EVENT_KEY_3 release!");;
+            break; // BSP_EVENT_KEY_3
+				case BSP_EVENT_KEY_3_LONGPUSH:
+            NRF_LOG_INFO("BSP_EVENT_KEY_3 long push!");;
+            break; // BSP_EVENT_KEY_3
 
         default:
             break;
